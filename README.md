@@ -69,16 +69,18 @@ FastAPI Backend
       |
       v
 MongoDB
+```
+
 ## RAG Flow
 
 1. User uploads a document or connects a data source.
 2. Text is extracted and split into chunks.
 3. Embeddings are generated and stored with document metadata.
-4. User sends a question.
+4. User sends a natural-language question.
 5. Relevant chunks are retrieved using cosine similarity.
 6. Retrieved context is added to the LLM prompt.
-7. The model streams the response back to the UI.
-8. Source citations are displayed with the answer.
+7. The model streams the response back to the UI using SSE.
+8. Source citations and similarity scores are displayed with the answer.
 
 ## Project Structure
 
@@ -91,3 +93,4 @@ KnowledgeAI-Rag-Platform/
 ├── docker-compose.yml
 ├── .gitignore
 └── README.md
+```
