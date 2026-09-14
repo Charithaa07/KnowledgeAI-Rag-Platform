@@ -1,0 +1,80 @@
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 240 6% 4%;
+  --foreground: 0 0% 98%;
+  --card: 240 5% 7%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 6% 6%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 38 92% 55%;
+  --primary-foreground: 240 10% 4%;
+  --secondary: 240 4% 12%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 4% 12%;
+  --muted-foreground: 240 5% 65%;
+  --accent: 38 92% 55%;
+  --accent-foreground: 240 10% 4%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 4% 16%;
+  --input: 240 4% 16%;
+  --ring: 38 92% 55%;
+  --radius: 0.5rem;
+}
+
+* { border-color: hsl(var(--border)); }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: #09090B;
+  color: hsl(var(--foreground));
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Cabinet Grotesk', 'IBM Plex Sans', sans-serif;
+}
+
+.font-mono, code, pre { font-family: 'IBM Plex Mono', monospace; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #27272a; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+
+::selection { background: rgba(245,166,35,0.3); color: #fff; }
+
+/* highlight.js dark theme for code blocks */
+.hljs { background: #18181b !important; color: #e4e4e7; border-radius: 6px; }
+
+.prose-invert-custom { color: #d4d4d8; line-height: 1.7; }
+.prose-invert-custom p { margin: 0.6em 0; }
+.prose-invert-custom h1, .prose-invert-custom h2, .prose-invert-custom h3 { color: #fafafa; margin: 0.8em 0 0.4em; font-weight: 700; }
+.prose-invert-custom ul, .prose-invert-custom ol { margin: 0.5em 0; padding-left: 1.4em; }
+.prose-invert-custom li { margin: 0.25em 0; }
+.prose-invert-custom a { color: #f5a623; text-decoration: underline; }
+.prose-invert-custom pre { background: #18181b; border: 1px solid #27272a; padding: 12px 14px; border-radius: 8px; overflow-x: auto; margin: 0.7em 0; }
+.prose-invert-custom code { font-size: 0.85em; }
+.prose-invert-custom :not(pre) > code { background: #27272a; color: #fbbf24; padding: 1px 6px; border-radius: 4px; }
+.prose-invert-custom table { border-collapse: collapse; width: 100%; margin: 0.7em 0; }
+.prose-invert-custom th, .prose-invert-custom td { border: 1px solid #27272a; padding: 6px 10px; text-align: left; }
+.prose-invert-custom blockquote { border-left: 3px solid #f5a623; padding-left: 12px; color: #a1a1aa; margin: 0.6em 0; }
+
+@keyframes fadeup { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fadeup { animation: fadeup 0.35s ease-out both; }
+
+@keyframes pulsedot { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+.dot-pulse { animation: pulsedot 1s infinite; }
+
+@layer base {
+  body { @apply bg-background text-foreground; }
+}

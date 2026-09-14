@@ -1,0 +1,9 @@
+sku,product,category,price_usd,stock,supplier,rating
+ACM-101,Cloud Starter Plan,Subscription,29,unlimited,Acme,4.6
+ACM-102,Cloud Pro Plan,Subscription,99,unlimited,Acme,4.8
+ACM-201,Data Connector Pack,Add-on,49,unlimited,Acme,4.3
+HW-310,Edge Gateway Device,Hardware,349,128,Northwind,4.5
+HW-311,Sensor Kit (10-pack),Hardware,189,540,Northwind,4.2
+SVC-400,Onboarding Package,Service,1200,n/a,Acme,4.9
+SVC-401,Premium Support (Annual),Service,4800,n/a,Acme,4.7
+ACM-105,Enterprise Plan,Subscription,custom,unlimited,Acme,4.9
