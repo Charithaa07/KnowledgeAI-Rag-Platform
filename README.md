@@ -19,6 +19,26 @@ KnowledgeAI lets users upload documents or connect external data sources such as
 - Docker-based local deployment
 - Automated backend and frontend testing
 
+  ## Product Screenshots
+
+### RAG Chat
+![RAG Chat](docs/Images/rag-chat.png)
+
+### RAG Citations
+![RAG Chat with Citations](docs/Images/rag-chat-citations.png)
+
+### Dashboard
+![Dashboard](docs/Images/dashboard.png)
+
+### Knowledge Base
+![Knowledge Base](docs/Images/knowledge-base.png)
+
+### Semantic Search
+![Semantic Search](docs/Images/semantic-search.png)
+
+### Admin Dashboard
+![Admin Dashboard](docs/Images/admin-dashboard.png)
+
 ## Tech Stack
 
 ### Frontend
